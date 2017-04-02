@@ -9,6 +9,9 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "buildserver": "webpack -p && webpack-dev-server",
     "clean": "rimraf ./dist/*"
+  },"repository": {
+    "type": "git",
+    "url": "git+https://github.com/henk-badenhorst/Simple-Webpack-2-Boilerplate.git"
   },
   "author": "henk.io",
   "license": "ISC",

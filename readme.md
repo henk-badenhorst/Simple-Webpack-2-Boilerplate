@@ -6,12 +6,12 @@ A simple boilerplate for building a static HTML website using SCSS & Bootstrap. 
 Install 
 -------
 
-> - Run Time: __npm install__
+> - To Install: __npm install__
 
-Webpack Commands
-----------------
+Commands
+--------
 
-> - Development Time: __npm run dev__
+> - Start Development: __npm run dev__
 > - Build The Solution: __npm run build__
-> - Server in Build Directory: __gulp run-build-server__
+> - Clean the Build: __npm run clean__
 
