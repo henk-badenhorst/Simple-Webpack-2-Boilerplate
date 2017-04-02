@@ -1,0 +1,40 @@
+body {
+  background-color: $boilerplate-white;
+  padding-bottom: 75px;
+  .logos{
+    img{
+      height: 150px;
+      margin: 50px auto;
+      display: block;
+    }
+  }
+  h1 {
+    color: $boilerplate-blue;
+  }
+  footer{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: $gray-lighter;
+    a{
+      line-height: 75px;
+      margin-left: 40px;
+      font-size: 16px;
+      display: block;
+      text-decoration: none;
+      color: $gray-dark;
+      &:hover{
+        text-decoration: none;
+        color: $gray-light;
+      }
+    }
+    img{
+      height: 40px;
+      position: absolute;
+      right: 40px;
+      top: 20px;
+    }
+  }
+}
+
