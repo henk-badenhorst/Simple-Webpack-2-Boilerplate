@@ -1,2 +1,6 @@
 node_modules
-dist
+dist/css
+dist/fonts
+dist/images
+dist/js
+dist/index.html
