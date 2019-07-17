@@ -1,17 +1,30 @@
-Simple Webpack 2 Boilerplate
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Simple Webpack 2 Starter
 ============================
 
-A simple boilerplate for building a static HTML website using SCSS & Bootstrap. Incorporating Hot Module Replacement and a simple build service.
+A simple starter project for building a basic website using SCSS & Bootstrap. Incorporating Hot Module Replacement and a simple webpack build service.
 
-Install 
+Get Started
 -------
+To install simply run
 
-> - To Install: __npm install__
+```$ npm install```
 
-Commands
+Usage
 --------
 
-> - Start Development: __npm run dev__
-> - Build The Solution: __npm run build__
-> - Clean the Build: __npm run clean__
+Start HMR Development Server
 
+```$ npm start```
+
+Production Build
+
+```$ npm run build```
+
+Production Build
+
+```$ npm run build:server```
+
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)

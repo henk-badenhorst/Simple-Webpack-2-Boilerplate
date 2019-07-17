@@ -5,11 +5,12 @@
   "description": "webpack,sass,react,boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
-    "buildserver": "webpack -p && webpack-dev-server",
+    "build:server": "webpack -p && webpack-dev-server",
     "clean": "rimraf ./dist/*"
-  },"repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/henk-badenhorst/Simple-Webpack-2-Boilerplate.git"
   },
@@ -20,6 +21,12 @@
     "bootstrap-sass": "^3.3.7",
     "cross-env": "^4.0.0",
     "css-loader": "^0.28.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
