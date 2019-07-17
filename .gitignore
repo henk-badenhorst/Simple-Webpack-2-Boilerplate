@@ -1,6 +1,19 @@
-node_modules
-dist/css
-dist/fonts
-dist/images
-dist/js
-dist/index.html
+.DS_Store
+
+# Node Modules
+/node_modules
+
+# Generated
+/dist
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
