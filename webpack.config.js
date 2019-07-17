@@ -1,30 +1,28 @@
-const path = require('path');                                         // -- Requires file name for dev server -- //
-
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');             // -- Dynamically create index.html -- //
-const ExtractTextPlugin = require("extract-text-webpack-plugin");     // -- Extract Generated SASS --//
-
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var isProd = process.env.NODE_ENV === 'production'
 
-const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
+const cssDev = ['style-loader', 'css-loader', 'sass-loader']
 const cssProd = ExtractTextPlugin.extract({
-    fallback:'style-loader',
-    loader: ['css-loader', 'sass-loader']
+  fallback: 'style-loader',
+  loader: ['css-loader', 'sass-loader']
 })
 
-var cssConfig =  isProd ? cssProd : cssDev;
+var cssConfig = isProd ? cssProd : cssDev;
 
 module.exports = {
 
-    entry: {
-        'js/app': './src/js/app'
-    },
-    
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].min.js'
-    },
+  entry: {
+    'js/app': './src/js/app'
+  },
+
+output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].min.js'
+},
 
     module:{
         rules:[

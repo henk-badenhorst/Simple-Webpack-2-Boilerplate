@@ -1,6 +1,16 @@
 body {
   background-color: $boilerplate-white;
   padding-bottom: 75px;
+
+  .jumbotron {
+    background-color: $boilerplate-blue;
+    color: $boilerplate-white;
+    h4 {
+      font-weight: lighter;
+      letter-spacing: 1px;
+    }
+  }
+
   .logos{
     img{
       height: 150px;
@@ -8,15 +18,14 @@ body {
       display: block;
     }
   }
-  h1 {
-    color: $boilerplate-blue;
-  }
+
   footer{
     height: 75px;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: $gray-lighter;
+
     a{
       line-height: 75px;
       margin-left: 40px;
@@ -29,6 +38,7 @@ body {
         color: $gray-light;
       }
     }
+
     img{
       height: 40px;
       position: absolute;
