@@ -1,2 +1,3 @@
-# Ignore linting for Bootstrap
+# Ignore linting for Bootstrap & Fonts
 /src/styles/bootstrap/*
+/src/styles/fonts/*

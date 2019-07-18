@@ -1,0 +1,24 @@
+footer {
+  padding: 1.5rem 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darken($starter-dark, 2%);
+
+  p {
+    margin: 0;
+
+    a {
+      font-size: 1rem;
+      color: $gray-700;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: $primary;
+        transition: color 0.2s ease-in-out;
+      }
+    }
+  }
+}

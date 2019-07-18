@@ -1,1 +1,1 @@
-console.log('Hello From Henk\'s Boilerpalte')
+console.log('%cHappy Coding. 🍻', 'font-size: 20px; font-weight: bold')

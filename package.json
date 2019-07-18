@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/italtile/italtile-theme.git"
+    "url": "git@github.com:henk-badenhorst/Simple-Webpack-2-Boilerplate.git"
   },
   "keywords": [
     "webpack",
