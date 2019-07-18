@@ -1,0 +1,2 @@
+# Ignore linting for Bootstrap
+/src/styles/bootstrap/*

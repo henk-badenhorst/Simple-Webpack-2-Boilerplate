@@ -1,6 +1,6 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Simple Webpack 2 Starter
+Simple Webpack Starter
 ============================
 
 A simple starter project for building a basic website using SCSS & Bootstrap. Incorporating Hot Module Replacement and a simple webpack build service.
