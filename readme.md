@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/henk-badenhorst/Simple-Webpack-Starter.svg?branch=master)](https://travis-ci.org/henk-badenhorst/Simple-Webpack-Starter)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Simple Webpack Starter
