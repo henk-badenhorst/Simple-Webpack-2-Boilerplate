@@ -3,18 +3,19 @@
 Simple Webpack Starter
 ============================
 
-A simple starter project for building a basic website using SCSS & Bootstrap. Incorporating Hot Module Replacement and a simple webpack build service.
+A simple and quick starter project for building basic websites using 
+SCSS and Bootstrap 4 & JavaScript (ES6). Featuring all the Webpack magic such as Hot Module Replacement, asset minification, and JavaScript obfuscation. See the [Demo page](https://henk-badenhorst.github.io/Simple-Webpack-Starter/) of a production build.
 
 Get Started
 -------
-To install simply run
+Install Node Modules
 
 ```$ npm install```
 
 Usage
 --------
 
-Start HMR Development Server
+Start Development Server
 
 ```$ npm start```
 
@@ -22,9 +23,12 @@ Production Build
 
 ```$ npm run build```
 
-Production Build
+Serve Production Build Locally
 
 ```$ npm run build:server```
 
-
+` `  
+` `
+` `  
+` `
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
