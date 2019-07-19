@@ -7,6 +7,14 @@ Simple Webpack Starter
 A simple and quick starter project for building basic websites using 
 SCSS and Bootstrap 4 & JavaScript (ES6). Featuring all the Webpack magic such as Hot Module Replacement, asset minification, and JavaScript obfuscation. See the [Demo page](https://henk-badenhorst.github.io/Simple-Webpack-Starter/) of a production build.
 
+Key Features
+-------
+
+* Production Ready Build System
+* ES6 with Babel & StandardJs
+* Sass & Sass Linter
+* Bootstrap 4
+
 Get Started
 -------
 Install Node Modules

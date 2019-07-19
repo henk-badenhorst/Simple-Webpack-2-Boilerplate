@@ -1,7 +1,7 @@
 {
   "name": "simple-webpack-starter",
   "version": "2.0.0",
-  "description": "A light foundation for building static websites",
+  "description": "A simple and quick starter project for building basic websites",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js --colors",
     "build:server": "http-server ./dist -p -gzip 3000 -c-1",
@@ -13,7 +13,8 @@
   },
   "keywords": [
     "webpack",
-    "Starter Project"
+    "Starter Project",
+    "es6"
   ],
   "author": "Henk Badenhorst",
   "license": "ISC",
