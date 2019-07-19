@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:henk-badenhorst/Simple-Webpack-2-Boilerplate.git"
+    "url": "https://github.com/henk-badenhorst/Simple-Webpack-Starter"
   },
   "keywords": [
     "webpack",
