@@ -8,7 +8,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   output: {
-    chunkFilename: 'js/[name].chunk.js'
+    chunkFilename: 'scripts/[name].chunk.js'
   },
   devServer: {
     contentBase: 'src',

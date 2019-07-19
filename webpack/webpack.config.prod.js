@@ -4,6 +4,7 @@ const merge = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const common = require('./webpack.common.js')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -11,8 +12,8 @@ module.exports = merge(common, {
   stats: 'errors-only',
   bail: true,
   output: {
-    filename: 'js/[name].[chunkhash:8].js',
-    chunkFilename: 'js/[name].[chunkhash:8].chunk.js'
+    filename: 'scripts/[name].[chunkhash:8].js',
+    chunkFilename: 'scripts/[name].[chunkhash:8].chunk.js'
   },
   plugins: [
     new Webpack.DefinePlugin({
@@ -20,7 +21,8 @@ module.exports = merge(common, {
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/styles.[contenthash].css'
+      filename: 'styles/styles.[contenthash].css',
+      chunkFilename: '[id].css'
     }),
     new StyleLintPlugin({
       configFile: Path.resolve(__dirname, '../.stylelintrc'),
@@ -28,6 +30,12 @@ module.exports = merge(common, {
       emitErrors: false, // Set to true if using CI
       files: '**/*.scss',
       syntax: 'scss'
+    }),
+    new OptimizeCssAssetsPlugin({
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }]
+      }
     })
   ],
   module: {
@@ -41,7 +49,7 @@ module.exports = merge(common, {
         test: /\.scss/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          'css-loader?url=false',
           'sass-loader'
         ]
       }
