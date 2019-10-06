@@ -5,17 +5,18 @@ Simple Webpack Starter
 ============================
 
 A simple and quick starter project for building basic websites using 
-SCSS and Bootstrap 4 & JavaScript (ES6). Featuring all the Webpack magic such as Hot Module Replacement, asset minification, and JavaScript obfuscation. 
+SCSS and Bootstrap 4 & JavaScript (ES6). Featuring all the Webpack magic such as Hot Module Replacement, asset minification, and JavaScript obfuscation. In addition to this, you can easily deploy your application with Docker which will serve it with Nginx.
 
 :point_right: [Demo](https://henk-badenhorst.github.io/simple-webpack-starter/)
 
 Key Features
 -------
 
-* Production Ready Build System
 * ES6 with Babel & StandardJs
 * Sass & Sass Linter
 * Bootstrap 4
+* Docker & Nginx
+* Production Ready
 
 Get Started
 -------
@@ -30,10 +31,17 @@ Start Development Server
 
 ```$ npm start```
 
-Production Build
+Build Application Locally
 
 ```$ npm run build```
 
-Serve Production Build Locally
+Deploying To Production
+--------
 
-```$ npm run build:server```
+Build Docker Image
+
+```$ docker-compose build```
+
+Start Docker Image
+
+```$ docker-compose up -d```

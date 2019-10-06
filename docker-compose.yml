@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  frontend: 
+    container_name: frontend
+    restart: always
+    build: 
+      context: .
+    ports:
+      - "80:80"
